@@ -1,0 +1,12 @@
+﻿.venv/
+venv/
+__pycache__/
+*.pyc
+*.zip
+.streamlit/secrets.toml
+**/.streamlit/secrets.toml
+.env
+ai_teacher_app/data/
+reports/
+mock_reports/
+tutor_reports/

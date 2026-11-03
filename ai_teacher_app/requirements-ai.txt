@@ -1,0 +1,4 @@
+-r requirements.txt
+# Optional: local dense retrieval and cross-encoder reranking.
+# First retrieval with installed models can download pretrained weights.
+sentence-transformers>=3.0,<6

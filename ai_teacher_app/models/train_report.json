@@ -1,0 +1,44 @@
+{
+  "fixed_difficulty_3": {
+    "mean_reward": 0.23186795219348189,
+    "mean_mastery_gain": 0.5131013848227922,
+    "mean_steps_to_mastery": 8.275,
+    "pct_frustrated(3+ wrong in a row)": 53.65,
+    "worked_examples_per_student": 0.0
+  },
+  "random": {
+    "mean_reward": -0.5916041590293812,
+    "mean_mastery_gain": 0.524498862871926,
+    "mean_steps_to_mastery": 8.2125,
+    "pct_frustrated(3+ wrong in a row)": 54.449999999999996,
+    "worked_examples_per_student": 0.0
+  },
+  "staircase": {
+    "mean_reward": 0.9707341619011215,
+    "mean_mastery_gain": 0.5732028973721043,
+    "mean_steps_to_mastery": 8.047,
+    "pct_frustrated(3+ wrong in a row)": 47.5,
+    "worked_examples_per_student": 0.0
+  },
+  "zpd_heuristic (sees true p_L)": {
+    "mean_reward": 0.9280494820544486,
+    "mean_mastery_gain": 0.6119445879110588,
+    "mean_steps_to_mastery": 7.4405,
+    "pct_frustrated(3+ wrong in a row)": 38.1,
+    "worked_examples_per_student": 0.0
+  },
+  "Q-policy (greedy)": {
+    "mean_reward": 0.8536020875234156,
+    "mean_mastery_gain": 0.6124044560840711,
+    "mean_steps_to_mastery": 9.7565,
+    "pct_frustrated(3+ wrong in a row)": 3.55,
+    "worked_examples_per_student": 7.5625
+  },
+  "Q-policy (sampled, deployed)": {
+    "mean_reward": 0.9163985750505662,
+    "mean_mastery_gain": 0.607493628466847,
+    "mean_steps_to_mastery": 8.3525,
+    "pct_frustrated(3+ wrong in a row)": 35.15,
+    "worked_examples_per_student": 2.1775
+  }
+}

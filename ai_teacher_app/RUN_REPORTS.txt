@@ -1,0 +1,9 @@
+QUICK START (Windows / Mac / Linux, Python 3.10+)
+  cd ai_teacher_app
+  pip install -r requirements.txt
+  python tests/test_forms.py                      -> ALL PASS
+  python forms_pipeline.py --csv forms/sample_responses_simulated.csv --config forms/quiz_config_simulated.json --out reports
+  open reports/teacher_report.html                (one student_*.html per student)
+Your own Google Form: build it with forms/create_form.gs, download the Sheet as CSV, use your quiz_config.json.
+Optional AI agent: pip install openai, set OPENAI_API_KEY (or GEMINI_API_KEY), add --agent.
+Optional live Sheet: pip install gspread, use --sheet <url> --creds service_account.json

@@ -1,0 +1,12 @@
+fastapi>=0.110.0
+uvicorn>=0.29.0
+python-multipart>=0.0.9
+numpy>=1.24.0
+pandas>=2.0.0
+google-genai>=1.0.0
+pydantic>=2.0.0
+sympy>=1.12
+pypdf>=4.0.0
+streamlit>=1.40.0   # only needed if you still want the old Streamlit app
+
+reportlab>=4.0.0  # PDF report export

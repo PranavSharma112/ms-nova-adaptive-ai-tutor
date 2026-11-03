@@ -1,0 +1,14 @@
+{
+  "documents": [
+    {"source": "photosynthesis.txt", "text": "Photosynthesis is the process by which green plants use sunlight, water and carbon dioxide to produce glucose and oxygen. Chlorophyll in the chloroplasts absorbs light energy for making food."},
+    {"source": "cells.txt", "text": "Mitosis is the process in which a eukaryotic cell divides its nucleus, forming two genetically identical nuclei. This plays a role in growth and tissue repair."},
+    {"source": "fractions.txt", "text": "A fraction describes part of a whole. To add two fractions with different denominators, first find a common denominator and rewrite each fraction before adding numerators."},
+    {"source": "force.txt", "text": "Newton's second law describes how force, mass, and acceleration are related. For constant mass, net force equals mass multiplied by acceleration. A larger net force causes a greater acceleration."}
+  ],
+  "queries": [
+    {"query": "How does a green plant make glucose with sunlight?", "relevant_sources": ["photosynthesis.txt"]},
+    {"query": "What happens to the nucleus during mitosis?", "relevant_sources": ["cells.txt"]},
+    {"query": "How do we add unlike fractions?", "relevant_sources": ["fractions.txt"]},
+    {"query": "What is the relationship between mass and acceleration?", "relevant_sources": ["force.txt"]}
+  ]
+}

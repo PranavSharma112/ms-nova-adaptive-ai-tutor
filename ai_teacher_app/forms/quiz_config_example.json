@@ -1,0 +1,21 @@
+{
+  "form_title": "GAI Unit 1 - Week quiz",
+  "form_id": "gai-u1",
+  "subject": "Generative AI",
+  "id_column": "Email Address",
+  "name_column": "Full name",
+  "timestamp_column": "Timestamp",
+  "questions": [
+    {"id": "q1", "topic": "Conditional probability", "difficulty": 2,
+     "header": "Q1. P(A)=0.3, P(B|A)=0.5. What is P(A and B)?",
+     "answer": "0.15", "options": ["0.15", "0.5", "0.8", "0.6"],
+     "distractors": {"0.5": "treats P(A and B) as P(B|A)", "0.8": "adds instead of multiplies"},
+     "slip_options": ["0.6"],
+     "confidence_header": "Q1. How sure are you?"},
+    {"id": "q2", "topic": "Bayes rule", "difficulty": 3,
+     "header": "Q2. A test is 90% sensitive, disease prevalence 1%, false positive 5%. P(disease | positive) is closest to?",
+     "answer": "0.15", "options": ["0.15", "0.90", "0.95", "0.01"],
+     "distractors": {"0.90": "confuses P(+|D) with P(D|+)", "0.95": "ignores base rate", "0.01": "uses the prior as the answer"},
+     "confidence_header": "Q2. How sure are you?"}
+  ]
+}

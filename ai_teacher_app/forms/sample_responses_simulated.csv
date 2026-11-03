@@ -1,0 +1,61 @@
+Timestamp,Email Address,Full name,Q1. Probability basics (level 1),Q1. How sure are you?,Q2. Probability basics (level 2),Q2. How sure are you?,Q3. Probability basics (level 3),Q3. How sure are you?,Q4. Conditional probability (level 1),Q4. How sure are you?,Q5. Conditional probability (level 2),Q5. How sure are you?,Q6. Conditional probability (level 3),Q6. How sure are you?,Q7. Bayes rule (level 1),Q7. How sure are you?,Q8. Bayes rule (level 2),Q8. How sure are you?,Q9. Bayes rule (level 3),Q9. How sure are you?,Q10. Generative models (level 1),Q10. How sure are you?,Q11. Generative models (level 2),Q11. How sure are you?,Q12. Generative models (level 3),Q12. How sure are you?,Q13. Likelihood & MLE (level 1),Q13. How sure are you?,Q14. Likelihood & MLE (level 2),Q14. How sure are you?,Q15. Likelihood & MLE (level 3),Q15. How sure are you?
+11/03/2026 10:00:00,aarav@school.in,Aarav,A,Sure,B,Not sure,B,Not sure,B,Not sure,C,Guessing,D,Not sure,C,Not sure,A,Sure,A,Sure,B,Not sure,B,Guessing,A,Sure,D,Not sure,B,Guessing,B,Guessing
+11/10/2026 10:00:00,aarav@school.in,Aarav,A,Sure,C,Guessing,C,Guessing,A,Sure,A,Sure,A,Sure,A,Sure,A,Sure,A,Sure,A,Guessing,B,Guessing,A,Sure,A,Sure,A,Guessing,A,Sure
+11/03/2026 10:01:00,diya@school.in,Diya,D,Sure,A,Sure,D,Sure,A,Sure,B,Not sure,C,Not sure,B,Guessing,B,Guessing,B,Not sure,A,Sure,A,Not sure,A,Sure,A,Sure,A,Sure,B,Not sure
+11/10/2026 10:01:00,diya@school.in,Diya,A,Sure,A,Sure,C,Guessing,D,Guessing,D,Not sure,B,Not sure,A,Sure,C,Not sure,A,Sure,B,Not sure,A,Sure,B,Not sure,C,Not sure,A,Sure,A,Sure
+11/03/2026 10:02:00,kabir@school.in,Kabir,C,Not sure,D,Guessing,A,Sure,C,Guessing,A,Sure,B,Not sure,A,Sure,B,Guessing,C,Guessing,A,Sure,B,Guessing,B,Not sure,B,Guessing,A,Sure,B,Guessing
+11/10/2026 10:02:00,kabir@school.in,Kabir,D,Guessing,C,Guessing,B,Guessing,B,Not sure,A,Guessing,B,Not sure,B,Guessing,A,Not sure,A,Sure,B,Not sure,B,Not sure,C,Not sure,C,Not sure,B,Guessing,B,Not sure
+11/03/2026 10:03:00,meera@school.in,Meera,D,Sure,D,Sure,C,Sure,C,Sure,B,Sure,C,Not sure,A,Sure,A,Sure,B,Sure,B,Not sure,A,Sure,D,Not sure,C,Sure,A,Sure,D,Sure
+11/10/2026 10:03:00,meera@school.in,Meera,A,Sure,A,Sure,B,Sure,D,Sure,A,Sure,C,Sure,B,Sure,A,Sure,A,Sure,C,Sure,C,Sure,B,Not sure,A,Sure,A,Sure,A,Sure
+11/03/2026 10:04:00,rohan@school.in,Rohan,B,Guessing,C,Guessing,A,Sure,B,Not sure,C,Not sure,B,Guessing,D,Guessing,B,Not sure,C,Guessing,B,Guessing,C,Not sure,B,Not sure,D,Not sure,D,Not sure,B,Guessing
+11/10/2026 10:04:00,rohan@school.in,Rohan,C,Guessing,A,Not sure,C,Not sure,B,Not sure,A,Sure,D,Sure,D,Not sure,D,Guessing,B,Guessing,B,Not sure,A,Sure,B,Guessing,B,Not sure,B,Guessing,C,Guessing
+11/03/2026 10:05:00,isha@school.in,Isha,A,Sure,D,Not sure,A,Sure,C,Guessing,A,Not sure,C,Not sure,A,Sure,C,Not sure,C,Not sure,A,Sure,A,Sure,A,Sure,B,Guessing,A,Sure,C,Guessing
+11/10/2026 10:05:00,isha@school.in,Isha,C,Not sure,A,Sure,C,Guessing,A,Sure,C,Guessing,A,Sure,C,Not sure,A,Sure,C,Not sure,A,Sure,D,Sure,A,Sure,A,Sure,B,Not sure,B,Not sure
+11/03/2026 10:06:00,vihaan@school.in,Vihaan,A,Sure,A,Not sure,A,Not sure,B,Not sure,C,Guessing,A,Sure,A,Not sure,A,Sure,A,Not sure,D,Sure,A,Sure,D,Not sure,A,Sure,B,Guessing,C,Guessing
+11/10/2026 10:06:00,vihaan@school.in,Vihaan,D,Sure,D,Sure,B,Not sure,D,Sure,A,Sure,D,Sure,D,Sure,C,Not sure,B,Guessing,C,Not sure,B,Not sure,C,Guessing,A,Sure,D,Not sure,A,Guessing
+11/03/2026 10:07:00,anaya@school.in,Anaya,C,Guessing,A,Sure,B,Not sure,A,Sure,A,Guessing,B,Guessing,B,Not sure,B,Guessing,B,Guessing,A,Sure,A,Sure,B,Not sure,D,Sure,A,Guessing,B,Not sure
+11/10/2026 10:07:00,anaya@school.in,Anaya,B,Guessing,D,Guessing,B,Not sure,A,Sure,A,Sure,A,Sure,C,Not sure,B,Not sure,C,Not sure,B,Not sure,A,Not sure,A,Sure,B,Guessing,A,Sure,B,Guessing
+11/03/2026 10:08:00,arjun@school.in,Arjun,A,Sure,B,Not sure,B,Sure,C,Sure,A,Sure,B,Not sure,C,Sure,C,Sure,B,Not sure,C,Not sure,A,Sure,C,Sure,B,Not sure,C,Not sure,B,Not sure
+11/10/2026 10:08:00,arjun@school.in,Arjun,B,Not sure,B,Sure,B,Sure,A,Sure,C,Sure,C,Sure,A,Sure,B,Sure,B,Sure,A,Sure,C,Sure,B,Not sure,A,Sure,A,Not sure,C,Sure
+11/03/2026 10:09:00,sara@school.in,Sara,B,Guessing,C,Not sure,B,Not sure,C,Not sure,C,Not sure,A,Not sure,A,Guessing,A,Sure,C,Guessing,A,Not sure,D,Not sure,C,Guessing,C,Guessing,A,Sure,C,Not sure
+11/10/2026 10:09:00,sara@school.in,Sara,C,Not sure,A,Guessing,B,Guessing,D,Guessing,B,Guessing,C,Not sure,A,Sure,C,Guessing,B,Guessing,D,Sure,C,Guessing,C,Guessing,B,Guessing,C,Not sure,B,Not sure
+11/03/2026 10:10:00,reyansh@school.in,Reyansh,B,Not sure,A,Sure,B,Not sure,A,Sure,A,Sure,C,Guessing,B,Not sure,A,Sure,A,Sure,A,Sure,C,Not sure,A,Sure,A,Sure,A,Sure,D,Guessing
+11/10/2026 10:10:00,reyansh@school.in,Reyansh,A,Sure,A,Sure,A,Sure,A,Sure,A,Sure,A,Sure,C,Guessing,C,Guessing,C,Not sure,A,Sure,A,Sure,C,Not sure,A,Sure,D,Sure,C,Not sure
+11/03/2026 10:11:00,myra@school.in,Myra,A,Sure,A,Sure,A,Sure,A,Sure,D,Sure,C,Guessing,B,Not sure,A,Guessing,C,Guessing,A,Sure,B,Guessing,C,Not sure,D,Sure,A,Sure,C,Guessing
+11/10/2026 10:11:00,myra@school.in,Myra,A,Sure,A,Sure,A,Guessing,A,Sure,A,Sure,A,Sure,A,Sure,A,Sure,A,Sure,A,Sure,A,Sure,B,Not sure,B,Guessing,D,Not sure,C,Not sure
+11/03/2026 10:12:00,ayaan@school.in,Ayaan,C,Not sure,C,Guessing,A,Guessing,A,Guessing,D,Not sure,A,Sure,D,Guessing,B,Not sure,D,Not sure,B,Not sure,B,Not sure,B,Guessing,D,Guessing,C,Not sure,B,Guessing
+11/10/2026 10:12:00,ayaan@school.in,Ayaan,B,Not sure,D,Not sure,C,Not sure,A,Sure,B,Not sure,C,Guessing,B,Guessing,B,Not sure,B,Not sure,C,Guessing,D,Guessing,A,Not sure,D,Sure,C,Not sure,B,Guessing
+11/03/2026 10:13:00,kiara@school.in,Kiara,B,Sure,A,Sure,D,Sure,A,Sure,B,Sure,C,Sure,A,Sure,B,Sure,C,Sure,B,Not sure,A,Sure,D,Not sure,B,Not sure,D,Not sure,B,Sure
+11/10/2026 10:13:00,kiara@school.in,Kiara,A,Sure,A,Sure,A,Sure,B,Sure,A,Sure,C,Sure,D,Sure,A,Sure,C,Not sure,C,Sure,B,Not sure,A,Sure,D,Not sure,A,Sure,D,Sure
+11/03/2026 10:14:00,vivaan@school.in,Vivaan,B,Not sure,B,Not sure,B,Not sure,A,Sure,B,Not sure,C,Guessing,C,Not sure,B,Guessing,C,Guessing,B,Guessing,C,Guessing,C,Guessing,A,Guessing,A,Sure,B,Guessing
+11/10/2026 10:14:00,vivaan@school.in,Vivaan,D,Guessing,B,Guessing,A,Sure,D,Guessing,A,Not sure,B,Guessing,C,Not sure,C,Guessing,C,Not sure,A,Sure,C,Not sure,C,Guessing,B,Guessing,B,Not sure,A,Guessing
+11/03/2026 10:15:00,aadhya@school.in,Aadhya,A,Sure,A,Guessing,B,Guessing,B,Guessing,B,Not sure,C,Guessing,A,Sure,B,Not sure,A,Sure,B,Guessing,C,Guessing,D,Not sure,C,Not sure,A,Sure,A,Not sure
+11/10/2026 10:15:00,aadhya@school.in,Aadhya,D,Sure,A,Sure,B,Guessing,A,Sure,A,Sure,C,Not sure,A,Sure,C,Not sure,B,Guessing,A,Sure,A,Sure,D,Guessing,A,Sure,C,Not sure,A,Sure
+11/03/2026 10:16:00,krish@school.in,Krish,A,Not sure,D,Not sure,C,Not sure,B,Not sure,A,Sure,A,Sure,A,Sure,D,Not sure,A,Sure,B,Not sure,A,Sure,A,Not sure,A,Sure,C,Guessing,C,Guessing
+11/10/2026 10:16:00,krish@school.in,Krish,A,Sure,A,Sure,C,Guessing,C,Guessing,A,Guessing,C,Guessing,D,Sure,A,Sure,B,Not sure,D,Sure,A,Sure,C,Guessing,D,Sure,A,Sure,A,Sure
+11/03/2026 10:17:00,navya@school.in,Navya,A,Sure,C,Guessing,B,Not sure,C,Guessing,C,Not sure,C,Guessing,A,Not sure,D,Guessing,B,Not sure,A,Sure,A,Sure,C,Not sure,B,Not sure,C,Guessing,A,Sure
+11/10/2026 10:17:00,navya@school.in,Navya,D,Sure,C,Not sure,A,Not sure,C,Not sure,C,Not sure,A,Sure,B,Not sure,C,Guessing,B,Guessing,A,Not sure,A,Sure,A,Not sure,B,Not sure,A,Not sure,C,Guessing
+11/03/2026 10:18:00,shaurya@school.in,Shaurya,A,Sure,B,Not sure,C,Not sure,D,Sure,A,Sure,C,Sure,B,Sure,C,Sure,D,Sure,D,Sure,C,Sure,A,Sure,A,Sure,A,Sure,A,Sure
+11/10/2026 10:18:00,shaurya@school.in,Shaurya,C,Not sure,A,Sure,C,Sure,B,Not sure,C,Sure,A,Not sure,C,Sure,B,Sure,A,Sure,C,Sure,A,Sure,B,Sure,A,Sure,A,Sure,A,Sure
+11/03/2026 10:19:00,pari@school.in,Pari,A,Sure,C,Not sure,B,Guessing,B,Not sure,C,Guessing,A,Guessing,C,Guessing,C,Not sure,A,Guessing,C,Guessing,C,Guessing,A,Guessing,B,Guessing,C,Guessing,C,Guessing
+11/10/2026 10:19:00,pari@school.in,Pari,C,Not sure,B,Not sure,C,Not sure,A,Not sure,C,Not sure,D,Not sure,C,Guessing,C,Guessing,B,Not sure,B,Guessing,B,Guessing,C,Guessing,C,Guessing,C,Guessing,A,Not sure
+11/03/2026 10:20:00,atharv@school.in,Atharv,A,Sure,B,Guessing,A,Sure,A,Sure,A,Sure,A,Sure,C,Not sure,A,Sure,A,Sure,A,Sure,B,Guessing,A,Sure,B,Guessing,A,Sure,A,Sure
+11/10/2026 10:20:00,atharv@school.in,Atharv,A,Sure,A,Sure,A,Sure,B,Guessing,A,Sure,B,Not sure,B,Guessing,C,Guessing,B,Not sure,A,Sure,A,Sure,A,Sure,B,Not sure,A,Sure,A,Sure
+11/03/2026 10:21:00,riya@school.in,Riya,C,Guessing,A,Sure,B,Not sure,C,Guessing,C,Guessing,A,Sure,A,Sure,D,Guessing,D,Not sure,C,Not sure,A,Sure,B,Guessing,C,Not sure,A,Sure,C,Not sure
+11/10/2026 10:21:00,riya@school.in,Riya,A,Sure,C,Not sure,A,Sure,C,Guessing,C,Not sure,B,Guessing,C,Guessing,D,Sure,B,Not sure,C,Guessing,D,Sure,D,Sure,D,Sure,D,Sure,C,Guessing
+11/03/2026 10:22:00,dhruv@school.in,Dhruv,D,Not sure,D,Not sure,A,Sure,B,Not sure,D,Guessing,B,Not sure,A,Sure,A,Sure,C,Not sure,B,Not sure,C,Not sure,C,Guessing,C,Guessing,C,Not sure,D,Guessing
+11/10/2026 10:22:00,dhruv@school.in,Dhruv,A,Sure,C,Guessing,A,Sure,B,Not sure,B,Guessing,A,Sure,C,Guessing,A,Not sure,C,Guessing,D,Guessing,C,Guessing,A,Sure,C,Not sure,A,Not sure,A,Not sure
+11/03/2026 10:23:00,tara@school.in,Tara,C,Sure,B,Sure,B,Sure,C,Sure,A,Sure,C,Sure,A,Sure,A,Sure,A,Sure,B,Sure,A,Sure,C,Sure,C,Not sure,A,Sure,A,Sure
+11/10/2026 10:23:00,tara@school.in,Tara,A,Sure,A,Sure,A,Sure,B,Sure,A,Sure,A,Sure,B,Sure,C,Sure,A,Sure,A,Sure,A,Sure,A,Sure,A,Sure,B,Sure,A,Sure
+11/03/2026 10:24:00,ishaan@school.in,Ishaan,C,Not sure,A,Sure,A,Sure,A,Not sure,A,Sure,A,Not sure,C,Not sure,B,Not sure,C,Guessing,B,Guessing,B,Not sure,B,Not sure,C,Not sure,B,Guessing,D,Not sure
+11/10/2026 10:24:00,ishaan@school.in,Ishaan,D,Not sure,C,Not sure,D,Guessing,B,Not sure,C,Guessing,A,Sure,A,Not sure,C,Guessing,D,Guessing,A,Guessing,C,Guessing,B,Not sure,B,Not sure,D,Not sure,A,Guessing
+11/03/2026 10:25:00,zoya@school.in,Zoya,A,Sure,A,Sure,A,Sure,A,Sure,B,Guessing,D,Not sure,A,Sure,A,Sure,A,Sure,A,Sure,D,Sure,C,Not sure,A,Guessing,A,Sure,D,Not sure
+11/10/2026 10:25:00,zoya@school.in,Zoya,A,Sure,A,Sure,B,Not sure,C,Guessing,A,Sure,A,Sure,A,Sure,A,Sure,A,Sure,A,Sure,A,Sure,A,Sure,A,Sure,C,Not sure,D,Sure
+11/03/2026 10:26:00,advik@school.in,Advik,A,Not sure,A,Sure,A,Sure,C,Guessing,B,Not sure,B,Guessing,D,Guessing,A,Sure,B,Guessing,D,Guessing,C,Not sure,C,Guessing,A,Sure,A,Sure,D,Guessing
+11/10/2026 10:26:00,advik@school.in,Advik,C,Not sure,B,Guessing,D,Sure,A,Sure,A,Sure,D,Sure,D,Sure,A,Sure,B,Not sure,D,Sure,A,Sure,C,Not sure,D,Sure,D,Sure,A,Sure
+11/03/2026 10:27:00,mira@school.in,Mira,A,Sure,A,Not sure,A,Not sure,A,Not sure,B,Not sure,B,Not sure,C,Guessing,C,Not sure,C,Not sure,A,Guessing,C,Guessing,B,Not sure,C,Guessing,D,Not sure,C,Not sure
+11/10/2026 10:27:00,mira@school.in,Mira,A,Sure,C,Not sure,D,Guessing,C,Guessing,A,Sure,B,Guessing,B,Not sure,C,Guessing,B,Guessing,A,Not sure,A,Sure,A,Sure,A,Sure,D,Guessing,C,Not sure
+11/03/2026 10:28:00,yash@school.in,Yash,B,Sure,C,Sure,A,Sure,B,Sure,C,Sure,A,Sure,A,Sure,B,Not sure,B,Sure,A,Sure,D,Sure,C,Sure,A,Sure,C,Not sure,C,Sure
+11/10/2026 10:28:00,yash@school.in,Yash,A,Sure,A,Not sure,C,Sure,B,Sure,D,Sure,A,Sure,A,Sure,A,Sure,C,Sure,C,Sure,B,Sure,D,Sure,D,Sure,C,Sure,A,Sure
+11/03/2026 10:29:00,nisha@school.in,Nisha,C,Not sure,C,Not sure,D,Sure,B,Guessing,A,Sure,B,Guessing,C,Not sure,B,Guessing,B,Guessing,C,Guessing,B,Guessing,A,Sure,B,Not sure,D,Not sure,B,Guessing
+11/10/2026 10:29:00,nisha@school.in,Nisha,B,Guessing,B,Guessing,B,Guessing,D,Sure,C,Not sure,C,Not sure,C,Not sure,B,Not sure,B,Guessing,D,Not sure,C,Not sure,D,Not sure,C,Guessing,B,Guessing,C,Not sure

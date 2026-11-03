@@ -1,0 +1,324 @@
+{
+ "form_title": "GAI weekly quiz",
+ "form_id": "gai-weekly",
+ "id_column": "Email Address",
+ "name_column": "Full name",
+ "timestamp_column": "Timestamp",
+ "questions": [
+  {
+   "id": "t0q0",
+   "topic": "Probability basics",
+   "difficulty": 1,
+   "header": "Q1. Probability basics (level 1)",
+   "answer": "A",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "distractors": {
+    "B": "adds probabilities of non-exclusive events",
+    "C": "probability above 1"
+   },
+   "slip_options": [
+    "D"
+   ],
+   "confidence_header": "Q1. How sure are you?"
+  },
+  {
+   "id": "t0q1",
+   "topic": "Probability basics",
+   "difficulty": 2,
+   "header": "Q2. Probability basics (level 2)",
+   "answer": "A",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "distractors": {
+    "B": "adds probabilities of non-exclusive events",
+    "C": "probability above 1"
+   },
+   "slip_options": [
+    "D"
+   ],
+   "confidence_header": "Q2. How sure are you?"
+  },
+  {
+   "id": "t0q2",
+   "topic": "Probability basics",
+   "difficulty": 3,
+   "header": "Q3. Probability basics (level 3)",
+   "answer": "A",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "distractors": {
+    "B": "adds probabilities of non-exclusive events",
+    "C": "probability above 1"
+   },
+   "slip_options": [
+    "D"
+   ],
+   "confidence_header": "Q3. How sure are you?"
+  },
+  {
+   "id": "t1q0",
+   "topic": "Conditional probability",
+   "difficulty": 1,
+   "header": "Q4. Conditional probability (level 1)",
+   "answer": "A",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "distractors": {
+    "B": "confuses P(A|B) with P(B|A)",
+    "C": "treats P(A|B) as P(A and B)"
+   },
+   "slip_options": [
+    "D"
+   ],
+   "confidence_header": "Q4. How sure are you?"
+  },
+  {
+   "id": "t1q1",
+   "topic": "Conditional probability",
+   "difficulty": 2,
+   "header": "Q5. Conditional probability (level 2)",
+   "answer": "A",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "distractors": {
+    "B": "confuses P(A|B) with P(B|A)",
+    "C": "treats P(A|B) as P(A and B)"
+   },
+   "slip_options": [
+    "D"
+   ],
+   "confidence_header": "Q5. How sure are you?"
+  },
+  {
+   "id": "t1q2",
+   "topic": "Conditional probability",
+   "difficulty": 3,
+   "header": "Q6. Conditional probability (level 3)",
+   "answer": "A",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "distractors": {
+    "B": "confuses P(A|B) with P(B|A)",
+    "C": "treats P(A|B) as P(A and B)"
+   },
+   "slip_options": [
+    "D"
+   ],
+   "confidence_header": "Q6. How sure are you?"
+  },
+  {
+   "id": "t2q0",
+   "topic": "Bayes rule",
+   "difficulty": 1,
+   "header": "Q7. Bayes rule (level 1)",
+   "answer": "A",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "distractors": {
+    "B": "forgets the prior",
+    "C": "ignores base rate"
+   },
+   "slip_options": [
+    "D"
+   ],
+   "confidence_header": "Q7. How sure are you?"
+  },
+  {
+   "id": "t2q1",
+   "topic": "Bayes rule",
+   "difficulty": 2,
+   "header": "Q8. Bayes rule (level 2)",
+   "answer": "A",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "distractors": {
+    "B": "forgets the prior",
+    "C": "ignores base rate"
+   },
+   "slip_options": [
+    "D"
+   ],
+   "confidence_header": "Q8. How sure are you?"
+  },
+  {
+   "id": "t2q2",
+   "topic": "Bayes rule",
+   "difficulty": 3,
+   "header": "Q9. Bayes rule (level 3)",
+   "answer": "A",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "distractors": {
+    "B": "forgets the prior",
+    "C": "ignores base rate"
+   },
+   "slip_options": [
+    "D"
+   ],
+   "confidence_header": "Q9. How sure are you?"
+  },
+  {
+   "id": "t3q0",
+   "topic": "Generative models",
+   "difficulty": 1,
+   "header": "Q10. Generative models (level 1)",
+   "answer": "A",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "distractors": {
+    "B": "mixes up generative and discriminative",
+    "C": "thinks GANs need labels"
+   },
+   "slip_options": [
+    "D"
+   ],
+   "confidence_header": "Q10. How sure are you?"
+  },
+  {
+   "id": "t3q1",
+   "topic": "Generative models",
+   "difficulty": 2,
+   "header": "Q11. Generative models (level 2)",
+   "answer": "A",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "distractors": {
+    "B": "mixes up generative and discriminative",
+    "C": "thinks GANs need labels"
+   },
+   "slip_options": [
+    "D"
+   ],
+   "confidence_header": "Q11. How sure are you?"
+  },
+  {
+   "id": "t3q2",
+   "topic": "Generative models",
+   "difficulty": 3,
+   "header": "Q12. Generative models (level 3)",
+   "answer": "A",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "distractors": {
+    "B": "mixes up generative and discriminative",
+    "C": "thinks GANs need labels"
+   },
+   "slip_options": [
+    "D"
+   ],
+   "confidence_header": "Q12. How sure are you?"
+  },
+  {
+   "id": "t4q0",
+   "topic": "Likelihood & MLE",
+   "difficulty": 1,
+   "header": "Q13. Likelihood & MLE (level 1)",
+   "answer": "A",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "distractors": {
+    "B": "treats likelihood as a probability over parameters",
+    "C": "forgets the log"
+   },
+   "slip_options": [
+    "D"
+   ],
+   "confidence_header": "Q13. How sure are you?"
+  },
+  {
+   "id": "t4q1",
+   "topic": "Likelihood & MLE",
+   "difficulty": 2,
+   "header": "Q14. Likelihood & MLE (level 2)",
+   "answer": "A",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "distractors": {
+    "B": "treats likelihood as a probability over parameters",
+    "C": "forgets the log"
+   },
+   "slip_options": [
+    "D"
+   ],
+   "confidence_header": "Q14. How sure are you?"
+  },
+  {
+   "id": "t4q2",
+   "topic": "Likelihood & MLE",
+   "difficulty": 3,
+   "header": "Q15. Likelihood & MLE (level 3)",
+   "answer": "A",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "distractors": {
+    "B": "treats likelihood as a probability over parameters",
+    "C": "forgets the log"
+   },
+   "slip_options": [
+    "D"
+   ],
+   "confidence_header": "Q15. How sure are you?"
+  }
+ ]
+}

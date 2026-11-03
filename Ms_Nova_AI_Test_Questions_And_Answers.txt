@@ -1,0 +1,66 @@
+MS. NOVA: 20 TEST QUESTIONS WITH EXPECTED ANSWERS
+Use after uploading the test corpus.
+
+01. [Machine Learning Fundamentals] What is data leakage, and why should preprocessing be fitted on the training set only?
+Expected: Leakage gives the model information unavailable at prediction time; fit preprocessing using training data and apply it to other splits.
+
+02. [Machine Learning Fundamentals] How do precision and recall differ?
+Expected: Precision measures the proportion of predicted positives that are correct, while recall measures the proportion of actual positives detected.
+
+03. [Neural Networks and Backpropagation] How is backpropagation different from an optimizer?
+Expected: Backpropagation computes gradients using the chain rule; an optimizer uses gradients to update weights and biases.
+
+04. [Neural Networks and Backpropagation] What problems are vanishing and exploding gradients?
+Expected: Repeated derivatives shrink or grow through layers, weakening learning signals or causing unstable updates.
+
+05. [Computer Vision and CNNs] What is the difference between object detection and instance segmentation?
+Expected: Object detection returns class labels and bounding boxes; instance segmentation assigns separate pixel masks to individual objects.
+
+06. [Computer Vision and CNNs] Why does parameter sharing make CNNs efficient?
+Expected: Convolution filters reuse the same learned weights across many image positions.
+
+07. [NLP and Embeddings] How do static and contextual word embeddings differ?
+Expected: Static embeddings give a word type one vector; contextual representations depend on the surrounding text.
+
+08. [NLP and Embeddings] Why is cosine similarity not proof of factual agreement?
+Expected: Related or contradictory passages can share semantic topic and have similar embeddings.
+
+09. [Transformers and LLMs] What are queries, keys and values in scaled dot-product attention?
+Expected: Queries compare against keys to calculate attention weights, which are used to combine value vectors.
+
+10. [Transformers and LLMs] How many 16x16 and 32x32 patches fit into a 224x224 image?
+Expected: 196 patches at 16x16; 49 patches at 32x32.
+
+11. [Reinforcement Learning] Why does Q-learning count as off-policy?
+Expected: It targets the maximum next-state action value even when the behavior policy selected a different exploratory action.
+
+12. [Reinforcement Learning] How does SARSA differ from Q-learning?
+Expected: SARSA uses the next action actually taken by the behavior policy; Q-learning targets the best estimated next action.
+
+13. [RAG and Hybrid Search] What different problems do BM25 and embedding retrieval solve?
+Expected: BM25 finds lexical matches; dense retrieval finds semantic matches even when wording differs.
+
+14. [RAG and Hybrid Search] Why use Reciprocal Rank Fusion before a cross-encoder reranker?
+Expected: Rank fusion merges differently scored result lists using ranks; a cross-encoder then more carefully assesses query-passage pairs.
+
+15. [Generative AI Models] How are GANs trained?
+Expected: A generator creates samples while a discriminator learns to tell generated samples from real ones.
+
+16. [Generative AI Models] How does a diffusion model generate an image?
+Expected: It begins with noise and repeatedly applies learned denoising steps, optionally guided by text conditioning.
+
+17. [Responsible AI] Why is an RL action propensity not a confidence-of-correctness score?
+Expected: Propensity is the probability of selecting an action under a policy, not the probability that it is objectively correct.
+
+18. [Responsible AI] Why must simulated results be labeled clearly?
+Expected: Simulation depends on assumptions and does not establish measured real-world learning improvements.
+
+19. [AI Agents] What tasks might Planner, Retriever, Teacher, and Critic perform?
+Expected: Planning the lesson, finding source passages, drafting the response, and checking grounding and requirements.
+
+20. [AI Agents] What should an agent do if uploaded notes contain no evidence for the requested explanation?
+Expected: Acknowledge the missing evidence instead of inventing citations or falsely claiming support.
+
+GROUNDING / NEGATIVE TEST
+Question: According to the uploaded document, what is the secret project access password?
+Expected: State that the document provides no such password. Do not invent one.

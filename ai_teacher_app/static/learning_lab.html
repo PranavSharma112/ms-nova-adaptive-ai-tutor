@@ -1,0 +1,44 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ms. Nova · AI Learning Lab</title><style>
+:root{color-scheme:dark;font-family:system-ui,Arial;background:#101426;color:#edf1ff}*{box-sizing:border-box}body{max-width:1050px;margin:30px auto;padding:0 18px}a{color:#c2b3ff}h1{margin-bottom:0}p{color:#afb9d0}main{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-top:24px}.panel{border:1px solid #3d4564;background:#1a2038;border-radius:16px;padding:20px}.panel h2{margin-top:0;font-size:1.25rem}button{cursor:pointer;background:#b9a4fc;border:0;color:#1b1534;padding:10px 14px;border-radius:9px;font-weight:700;margin:4px 0}input{background:#101426;color:#fff;border:1px solid #697295;border-radius:8px;padding:10px;width:100%;margin:5px 0 10px}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-family:inherit;background:#111629;padding:12px;border-radius:9px;line-height:1.5;max-height:360px;overflow:auto}.item{background:#111629;padding:12px;margin:8px 0;border-radius:10px}.item b{color:#d0bcff}.small{font-size:.88rem}.error{color:#ffbebf}nav{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}.muted{opacity:.8}</style></head><body>
+<nav><a href="/">← Back to classroom</a><span id="session" class="muted">Checking session…</span></nav><h1>AI Learning Lab</h1><p>Hybrid source search, multi-agent teaching, grounded flashcards, misconception coaching, and explainable RL — using your current Ms. Nova session.</p>
+<main>
+<section class="panel"><h2>🤖 Multi-agent teacher</h2><p>Planner → hybrid retrieval → teacher → independent critic. Works only with uploaded notes and a connected Gemini key; results include an audit trail.</p><input id="agentquery" placeholder="What topic should Ms. Nova explain?"><button onclick="agentTeach()">Run grounded lesson</button><div id="agentResult"></div></section>
+<section class="panel"><h2>🔀 Hybrid search status</h2><p>See if local embeddings and cross-encoder reranking are active. If optional models aren't installed, BM25 continues working.</p><button onclick="ragStatus()">Check retrieval setup</button><div id="ragStatus"></div></section>
+<section class="panel"><h2>📚 Source-grounded flashcards</h2><p>Upload notes in the classroom first. Flashcards are generated only from matching excerpts.</p><input id="topic" placeholder="Topic e.g. photosynthesis"><button onclick="flashcards()">Generate flashcards</button><div id="cards"></div></section>
+<section class="panel"><h2>🗓 Personalized study plan</h2><p>Allocates revision time across topics based on tracked mastery.</p><label for="minutes">Minutes available</label><input id="minutes" type="number" min="15" max="180" value="45"><button onclick="plan()">Create study plan</button><div id="plan"></div></section>
+<section class="panel"><h2>🧠 Misconception coach</h2><p>Uses actual logged mistakes to propose targeted practice and checking questions.</p><button onclick="coach()">Analyze my mistakes</button><div id="coach"></div></section>
+<section class="panel"><h2>🔎 Search my notes</h2><p>Inspect the exact source excerpts retrieved from your documents.</p><input id="query" placeholder="Search phrase"><button onclick="evidence()">Find evidence</button><div id="evidence"></div></section>
+<section class="panel"><h2>🎯 Explain RL decision</h2><p>Inspect the last logged state, action and action probability.</p><button onclick="explain()">Show decision</button><div id="rl"></div></section>
+<section class="panel"><h2>🕸 AI concept map</h2><p>Extract prerequisite relationships from uploaded notes.</p><input id="concepttopic" placeholder="Topic"><button onclick="conceptmap()">Build concept map</button><div id="conceptmap"></div></section>
+<section class="panel"><h2>📝 Grounded practice quiz</h2><p>Generate revision questions with answers, explanations, and source references.</p><input id="practicetopic" placeholder="Topic"><button onclick="practice()">Generate practice</button><div id="practice"></div></section>
+<section class="panel"><h2>📈 Learning analytics</h2><p>View your mastery per topic and areas needing revision.</p><button onclick="progress()">Refresh analytics</button><div id="progress"></div></section>
+</main><script>
+const sid=localStorage.getItem('nova_sid');document.getElementById('session').textContent=sid?'Session: '+sid:'No active session. Start a classroom session first.';
+const e=s=>document.getElementById(s);function el(tag,txt,cls){const d=document.createElement(tag);d.textContent=txt; if(cls)d.className=cls;return d}
+function display(id,data){let root=e(id);root.replaceChildren();if(data.message||data.note||data.guidance)root.append(el('p',data.message||data.note||data.guidance));let arr=data.cards||data.questions||data.steps||data.findings||data.hits||data.progress?.topics;if(arr){if(!arr.length)root.append(el('p','Nothing to show yet.'));arr.forEach((x,i)=>{let div=el('div','', 'item');Object.entries(x).forEach(([k,v])=>{if(k==='text' && String(v).length>700)v=String(v).slice(0,700)+'…';let line=el('div',k+': '+v,'small');div.append(line)});root.append(div)})}else{const rest={...data};delete rest.message;delete rest.note;delete rest.guidance;root.append(el('pre',JSON.stringify(rest,null,2)))}}
+async function req(endpoint,id,body){let root=e(id);root.replaceChildren(el('p','Working…'));if(!sid){root.replaceChildren(el('p','Start a classroom session first.','error'));return}try{let res=await fetch('/api/session/'+encodeURIComponent(sid)+'/lab/'+endpoint,{method:body?'POST':'GET',headers:{'Content-Type':'application/json'},...(body?{body:JSON.stringify(body)}:{})});let data=await res.json();if(!res.ok)throw Error(data.detail||'Request failed');display(id,data)}catch(err){root.replaceChildren(el('p',String(err.message||err),'error'))}}
+async function agentTeach(){
+  const root=e('agentResult');root.replaceChildren(el('p','Running planner, retriever, teacher and critic…'));
+  if(!sid){root.replaceChildren(el('p','Start a classroom session first.','error'));return}
+  try{
+    const res=await fetch('/api/session/'+encodeURIComponent(sid)+'/lab/agent-teach',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({question:e('agentquery').value,mode:'lesson'})});
+    const out=await res.json();if(!res.ok)throw Error(out.detail||'Request failed');
+    root.replaceChildren(el('p',out.answer||out.message||'No answer available.'));
+    root.append(el('p','Status: '+out.status+' • '+(out.message||''),'small'));
+    if(out.check_question)root.append(el('p','Check your understanding: '+out.check_question));
+    const heading=el('h3','Agent trace');root.append(heading);
+    (out.trace||[]).forEach(step=>{
+       const div=el('div','', 'item');div.append(el('b',step.stage+' — '+step.status));
+       div.append(el('pre',JSON.stringify(step.detail,null,2)));root.append(div)
+    });
+    root.append(el('h3','Evidence used'));
+    (out.evidence||[]).forEach(h=>{
+      const div=el('div','', 'item');div.append(el('b','[S'+h.id+'] '+h.source));
+      div.append(el('p',h.text.slice(0,650)));root.append(div)
+    });
+  }catch(err){root.replaceChildren(el('p',String(err.message||err),'error'))}
+}
+function ragStatus(){req('rag-status','ragStatus')}
+function conceptmap(){req('concept-map','conceptmap',{topic:e('concepttopic').value})}function practice(){req('practice','practice',{topic:e('practicetopic').value,count:5})}function flashcards(){req('flashcards','cards',{topic:e('topic').value,count:6})}function plan(){req('study-plan','plan',{minutes:Number(e('minutes').value)||45})}function coach(){req('misconceptions','coach',{})}function evidence(){req('evidence?query='+encodeURIComponent(e('query').value),'evidence')}function explain(){req('rl-explain','rl')}function progress(){req('progress','progress')}
+if(sid)progress();
+</script></body></html>
